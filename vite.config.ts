@@ -4,15 +4,14 @@ import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import react from '@vitejs/plugin-react'
 
-/*export default defineConfig({
-  plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
-});*/
-
 export default defineConfig({
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths(), react()],
   server: {
-    host: '0.0.0.0',   // ← ez a kulcs!
+    host: '0.0.0.0',
     port: 5173,
-    strictPort: true
+    strictPort: true,
+    watch: {
+    usePolling: true
+  }
   }
 })
