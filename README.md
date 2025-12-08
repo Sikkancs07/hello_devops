@@ -64,8 +64,9 @@ npm run dev
 Ezután az alkalmazás elérhető a http://localhost:5173 címen.
 
 Build (production)
+```bash
 npm run build
-
+```
 
 Ez a parancs a dist/ könyvtárba készíti el a production-ready fájlokat.
 
