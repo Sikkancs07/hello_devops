@@ -14,7 +14,7 @@ A projekt HTTP-n keresztül elérhető:
 
 ---
 
-## ⚙️ Tech stack
+## Tech stack
 
 - React + Vite
 - Node.js 20
@@ -23,7 +23,7 @@ A projekt HTTP-n keresztül elérhető:
 
 ---
 
-## 📁 Projekt felépítése
+## Projekt felépítése
 
 ```text
 my-devops-app/
@@ -39,7 +39,7 @@ my-devops-app/
 ```
 ---
 
-## 🧪 Előkészületek
+## Előkészületek
 
 A projekt futtatásához szükséges:
 
@@ -50,7 +50,7 @@ A projekt futtatásához szükséges:
 
 ---
 
-## 📦 Telepítés és buildelés
+## Telepítés és buildelés
 
 A következő parancsok a projekt gyökerében (ahol a `package.json` található) futtathatók:
 
@@ -70,7 +70,7 @@ npm run build
 
 Ez a parancs a dist/ könyvtárba készíti el a production-ready fájlokat.
 
-## 🐳 Docker használata
+## Docker használata
 Docker image építése
 docker build -t my-devops-app .
 
@@ -80,7 +80,7 @@ docker run -p 4000:3000 my-devops-app
 
 Ezután az alkalmazás elérhető a http://localhost:4000 címen.
 
-## 💻 Dev Container
+## Dev Container
 
 A projekt tartalmaz egy .devcontainer mappát, amely lehetővé teszi, hogy az alkalmazás egy konténerizált fejlesztői környezetben fusson (pl. GitHub Codespaces vagy VS Code Dev Containers használatával).
 
@@ -106,7 +106,7 @@ npm run dev
 A fejlesztői szerver elérhető lesz: http://localhost:5173
 
 
-## 📝 Git (Trunk-based development)
+## Git (Trunk-based development)
 
 A projekt Git verziókezeléssel készült
 
