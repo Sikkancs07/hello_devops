@@ -35,8 +35,8 @@ my-devops-app/
 ├── package.json
 ├── vite.config.ts
 ├── Dockerfile
-└── README.md```
-
+└── README.md
+```
 ---
 
 ## 🧪 Előkészületek
@@ -59,3 +59,57 @@ A következő parancsok a projekt gyökerében (ahol a `package.json` találhat�
 ```bash
 npm install
 npm run dev
+```
+
+Ezután az alkalmazás elérhető a http://localhost:5173 címen.
+
+Build (production)
+npm run build
+
+
+Ez a parancs a dist/ könyvtárba készíti el a production-ready fájlokat.
+
+🐳 Docker használata
+Docker image építése
+docker build -t my-devops-app .
+
+Docker konténer futtatása
+docker run -p 4000:3000 my-devops-app
+
+
+Ezután az alkalmazás elérhető a http://localhost:4000 címen.
+
+💻 Dev Container
+
+A projekt tartalmaz egy .devcontainer mappát, amely lehetővé teszi, hogy az alkalmazás egy konténerizált fejlesztői környezetben fusson (pl. GitHub Codespaces vagy VS Code Dev Containers használatával).
+
+Klónozd le a repository-t. Ha zip-ként töltöd le, akkor a kibontásnál töröld a végéről a "-master" részt.
+
+
+Dev Container használata lépésről lépésre:
+
+```ordered list
+Nyisd meg a projektet VS Code-ban.
+Telepítsd a Dev Containers bővítményt, ha még nincs.
+Parancspaletta megnyitása: Ctrl + Shift + P
+Válaszd: Dev Containers: Reopen in Container
+Az első indulás után automatikusan fut az npm install
+Indítsd az appot a konténeren belül:
+```
+
+```bash
+npm run dev
+```
+
+A fejlesztői szerver elérhető lesz pl.:
+http://localhost:5173
+
+📝 Git (Trunk-based development)
+
+A projekt Git verziókezeléssel készült
+
+A main branch a trunk
+
+A fejlesztés külön feature branchekben történt
+
+Minden commit jól olvasható, informatív üzenettel rendelkezik
