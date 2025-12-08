@@ -89,11 +89,11 @@ Klónozd le a repository-t. Ha zip-ként töltöd le, akkor a kibontásnál tör
 Dev Container használata lépésről lépésre:
 
 ```Ordered list
-Nyisd meg a projektet VS Code-ban.
-Telepítsd a Dev Containers bővítményt, ha még nincs.
-Parancspaletta megnyitása: Ctrl + Shift + P
-Válaszd: Dev Containers: Reopen in Container
-Az első indulás után automatikusan fut az npm install
+1. Nyisd meg a projektet VS Code-ban.
+2. Telepítsd a Dev Containers bővítményt, ha még nincs.
+3. Parancspaletta megnyitása: Ctrl + Shift + P
+4. Válaszd: Dev Containers: Reopen in Container
+5. Az első indulás után automatikusan fut az npm install
 ```
 
 Indítsd az appot a konténeren belül:
