@@ -24,3 +24,36 @@ A projekt HTTP-n keresztül elérhető:
 ---
 
 ## 📁 Projekt felépítése
+my-devops-app/
+├── public/
+├── src/
+├── .devcontainer/
+│ ├── devcontainer.json
+│ └── Dockerfile
+├── package.json
+├── vite.config.ts
+├── Dockerfile
+└── README.md
+
+---
+
+## 🧪 Előkészületek
+
+A projekt futtatásához szükséges:
+
+- [Node.js (v18+)](https://nodejs.org/)
+- [Docker](https://www.docker.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+  - **Dev Containers** bővítmény telepítve
+
+---
+
+## 📦 Telepítés és buildelés
+
+A következő parancsok a projekt gyökerében (ahol a `package.json` található) futtathatók:
+
+### Fejlesztői környezet indítása
+
+```bash
+npm install
+npm run dev
