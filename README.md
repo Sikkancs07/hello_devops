@@ -68,7 +68,7 @@ Build (production)
 npm run build
 ```
 
-Ez a parancs a dist/ könyvtárba készíti el a production-ready fájlokat.
+Ez a parancs a build/ könyvtárba készíti el a production-ready fájlokat.
 
 ## Docker használata
 Docker image építése
