@@ -27,11 +27,11 @@ A projekt HTTP-n keresztül elérhető:
 
 ```text
 my-devops-app/
-├── public/
-├── src/
 ├── .devcontainer/
 │   ├── devcontainer.json
 │   └── Dockerfile
+├── app/
+├── public/
 ├── package.json
 ├── vite.config.ts
 ├── Dockerfile
@@ -88,14 +88,15 @@ Klónozd le a repository-t. Ha zip-ként töltöd le, akkor a kibontásnál tör
 
 Dev Container használata lépésről lépésre:
 
-```ordered list
+```Ordered list
 Nyisd meg a projektet VS Code-ban.
 Telepítsd a Dev Containers bővítményt, ha még nincs.
 Parancspaletta megnyitása: Ctrl + Shift + P
 Válaszd: Dev Containers: Reopen in Container
 Az első indulás után automatikusan fut az npm install
-Indítsd az appot a konténeren belül:
 ```
+
+Indítsd az appot a konténeren belül:
 
 ```bash
 npm run dev
@@ -110,6 +111,6 @@ A projekt Git verziókezeléssel készült
 
 A main branch a trunk
 
-A fejlesztés külön feature branchekben történt
+A fejlesztés külön feature brancben történt
 
 Minden commit jól olvasható, informatív üzenettel rendelkezik
