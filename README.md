@@ -24,16 +24,18 @@ A projekt HTTP-n keresztül elérhető:
 ---
 
 ## 📁 Projekt felépítése
+
+```text
 my-devops-app/
 ├── public/
 ├── src/
 ├── .devcontainer/
-│ ├── devcontainer.json
-│ └── Dockerfile
+│   ├── devcontainer.json
+│   └── Dockerfile
 ├── package.json
 ├── vite.config.ts
 ├── Dockerfile
-└── README.md
+└── README.md```
 
 ---
 
