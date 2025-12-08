@@ -43,7 +43,7 @@ my-devops-app/
 
 A projekt futtatásához szükséges:
 
-- [Node.js (v18+)](https://nodejs.org/)
+- [Node.js (v20+)](https://nodejs.org/)
 - [Docker](https://www.docker.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
   - **Dev Containers** bővítmény telepítve
@@ -72,17 +72,20 @@ Ez a parancs a dist/ könyvtárba készíti el a production-ready fájlokat.
 
 ## Docker használata
 Docker image építése
+```bash
 docker build -t my-devops-app .
+```
 
 Docker konténer futtatása
+```bash
 docker run -p 4000:3000 my-devops-app
-
+```
 
 Ezután az alkalmazás elérhető a http://localhost:4000 címen.
 
 ## Dev Container
 
-A projekt tartalmaz egy .devcontainer mappát, amely lehetővé teszi, hogy az alkalmazás egy konténerizált fejlesztői környezetben fusson (pl. GitHub Codespaces vagy VS Code Dev Containers használatával).
+A projekt tartalmaz egy .devcontainer mappát, amely lehetővé teszi, hogy az alkalmazás egy konténerizált fejlesztői környezetben fusson (VS Code Dev Containers használatával).
 
 Klónozd le a repository-t. Ha zip-ként töltöd le, akkor a kibontásnál töröld a végéről a "-master" részt.
 
