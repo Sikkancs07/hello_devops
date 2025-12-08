@@ -102,8 +102,8 @@ Indítsd az appot a konténeren belül:
 npm run dev
 ```
 
-A fejlesztői szerver elérhető lesz pl.:
-http://localhost:5173
+A fejlesztői szerver elérhető lesz: http://localhost:5173
+
 
 📝 Git (Trunk-based development)
 
