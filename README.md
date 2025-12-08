@@ -52,7 +52,8 @@ A projekt futtatásához szükséges:
 
 ## Telepítés és buildelés
 
-A következő parancsok a projekt gyökerében (ahol a `package.json` található) futtathatók:
+Le kell klónozni az alkalmazást.
+A következő parancsokat a projekt gyökerében (ahol a `package.json` található) futtatandóak:
 
 ### Fejlesztői környezet indítása
 
